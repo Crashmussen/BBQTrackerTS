@@ -39,7 +39,7 @@ export default function CookForm() {
     return (data.cookTemp = newTemp);
   };
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     addCook(data);
     setData({
