@@ -87,7 +87,9 @@ return (
         onChange={handleSliderChange}
             aria-labelledby="input-slider"
       />
-    <Button className="FormElement" variant="contained" size="medium" disableElevation sx={{minWidth:225, width: "100%", maxWidth: 360, m: .25, p: 1.9}} type="submit" onSubmit={handleSubmit}>Add Cook</Button>
+      <Button variant="contained" type="submit" onSubmit={handleChange}>
+        Add Cook
+      </Button>
     </Box>
     
  </form> : null}
