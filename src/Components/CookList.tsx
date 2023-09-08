@@ -19,8 +19,8 @@ export default function CookList() {
         )
     }, [cooks])
 
-    const addCook = (addCook) => {
-        setCooks((prevCooks) => {
+    const addCook = (addCook: [number, string, number, number]) => {
+        setCooks((prevCooks: []) => {
             return [...prevCooks, 
                     {id: self.crypto.randomUUID(),  
                     name: addCook.cookName, 
@@ -29,8 +29,8 @@ export default function CookList() {
             ]
         })
     }
-    const removeCook = (id) => {
-        setCooks((prevCooks) => {
+    const removeCook = (id: number) => {
+        setCooks((prevCooks: []) => {
             return prevCooks.filter((c) => c.id !== id)
         });
     }
@@ -39,7 +39,7 @@ export default function CookList() {
     return (
         <>
         <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper"}}>
-            {cooks.map((item) => {
+            {cooks.map((item: []) => {
                 return (
                     <CookItem 
                         item={item} 
