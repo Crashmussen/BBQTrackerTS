@@ -8,7 +8,7 @@ import Slider from '@mui/material/Slider';
 import * as React from 'react'
 import type { DataProps } from '../utils';
 
-export default function CookForm() {
+export default function CookForm({addCook}) {
     const [data, setData] = useState<DataProps>({
         cookName: "",
         cookTemp: 225,
