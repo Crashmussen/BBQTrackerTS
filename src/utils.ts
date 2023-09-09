@@ -22,7 +22,11 @@ export const updateCook = (cooks: Cook[], cookName: string, cookRub: string, coo
     cookName: cook.id === id ? cookName: cook.cookName,
 }))
 
-
+export type DataProps = {
+    cookName: string,
+    cookTemp: number,
+    cookTime: number,
+};
 
 
 
