@@ -6,12 +6,7 @@ import { Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Slider from '@mui/material/Slider';
 import * as React from 'react'
-
-type DataProps = {
-    cookName: string,
-    cookTemp: number,
-    cookTime: number,
-};
+import type { DataProps } from '../utils';
 
 export default function CookForm() {
     const [data, setData] = useState<DataProps>({
